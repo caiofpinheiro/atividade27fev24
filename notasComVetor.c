@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include <string.h>
-#include <locale.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
+#include <locale.h>
+#include <time.h>
 
 int main(){
 	setlocale(LC_ALL,"");
@@ -17,16 +18,18 @@ int main(){
 		printf("Nota %d: ", i + 1);
 		scanf("%f",&notas[i]);
 		
+	soma = soma + notas[i];
+		
 	}
 	
-	media = notas[i] / 3;
+	media =  soma / 3;
 	
-	printf(">>>Exibindo notas<<< \n");
+	printf("\n>>> Exibindo notas <<< \n");
 	for(i = 0; i < 3; i++){
 		printf("\nNota %d: %.1f\n", i+1, notas[i]);
    }
    
-   printf("\nMédia das notas: %.1f", media);
+   printf("\nMÃ©dia das notas: %.1f", media);
 
 	return 0;
 }
