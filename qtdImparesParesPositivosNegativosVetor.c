@@ -14,7 +14,7 @@ int main(){
 	int numeros[TAM];
 	
 	for(i = 0; i < TAM;i++){
-		printf("Digite os números: ");
+		printf("Digite os nÃºmeros: ");
 		scanf("%i",&numeros[i]);
 		
 		if(numeros[i] % 2 == 0){
@@ -38,12 +38,12 @@ int main(){
 	
 	
 		system("cls || clear");
-		printf("\n>>> Exibindo números ao usuário <<<");
-		printf("\nQuantidade de números pares: %i", par);
-		printf("\nQuantidade de números impares: %i", impar);
-		printf("\nQuantidade de números negativos: %i", negativo);
-		printf("\nQuantidade de números positivos: %i", positivo);
-		printf("\nQuantidade de números inseridos: %i", totalNumeros);
+		printf("\n>>> Exibindo nÃºmeros ao usuÃ¡rio <<<");
+		printf("\nQuantidade de nÃºmeros pares: %i", par);
+		printf("\nQuantidade de nÃºmeros impares: %i", impar);
+		printf("\nQuantidade de nÃºmeros negativos: %i", negativo);
+		printf("\nQuantidade de nÃºmeros positivos: %i", positivo);
+		printf("\nQuantidade de nÃºmeros inseridos: %i", totalNumeros);
 	return 0;
 	
 }
